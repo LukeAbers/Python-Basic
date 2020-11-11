@@ -1,3 +1,4 @@
+#e.g. python grab_html.py "output.txt" "<li class=\"result-row\"" "</li>" "output.html"
 import sys
 
 #save file location
