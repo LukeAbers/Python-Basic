@@ -26,7 +26,7 @@ while l > -1:
         tmp2 = fText.find(endToken)
         
         #append slice
-        arrayList.append([tmp:tmp2])
+        arrayList.append(fText[tmp:tmp2])
         
         #reset marker
         l = fText.find(startToken,tmp2)
