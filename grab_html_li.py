@@ -21,12 +21,12 @@ arrayList = []
 
 #search loop
 while l > -1:
-        #get slice
+        #get slice coords
         tmp = fText.find(startToken,l)
-        tmp2 = fText.find(endToken)
+        tmp2 = fText.find(endToken,tmp)
         
         #append slice
-        arrayList.append(fText[tmp:tmp2])
+        arrayList.append(fText[tmp:tmp2 + len(endToken)])
         
         #reset marker
         l = fText.find(startToken,tmp2)
